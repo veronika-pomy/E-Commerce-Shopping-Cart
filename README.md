@@ -1,3 +1,3 @@
-# Shopping Cart
+# Shopping Cart Built with React
 
 ##
