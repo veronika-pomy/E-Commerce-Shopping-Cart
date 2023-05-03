@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* palette picked using coolors.co */
+:root {
+  --light: white;
+  --light-blue: #b8f3ff;
+  --blue: #8ac6d0;
+  --dark: #36213e;
+  --gray: #63768d;
+  --violet: #554971;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* basic reset settings for css */
+html {
+  /* rem standard font size, 1rem = 10px */
+  font-size: 62.5%; 
+  /* helps with padding and margins for divs */
+  box-sizing: border-box;
+}
+
+body, #root {
+  height: 100vh;
+  margin: 0;
+}
+
+body, 
+input, 
+select, 
+textarea {
+  /* 20px */
+  font-size: 2rem;
+
+  /* add custom font later */
+
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* styling grid containing app components */
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  /* 5rem = 50px */
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  /* put footer at the bottom  */
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  color: black;
+  background-color: white;
+    /* alight text center vertically */
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+
+/* underline text of link on hover using animation effect */
+header a {
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+/* bold text of any link that's hovered over */
+a:hover {
+  font-weight: bold;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  color: black;
+  background-color: white;
+  border-top: 3px solid black;
+  /* alight text center horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
