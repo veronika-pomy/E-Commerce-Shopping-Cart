@@ -1,0 +1,39 @@
+[
+    {
+        "title": "T-shirt 1",
+        "image": "/images/tshit1.jpg",
+        "description": "About T-shirt 1",
+        "price": "10.99"
+    },
+    {
+        "title": "T-shirt 2",
+        "image": "/images/tshit2.jpg",
+        "description": "About T-shirt 2",
+        "price": "15.99"
+    },
+    {
+        "title": "T-shirt 3",
+        "image": "/images/tshit3.jpg",
+        "description": "About T-shirt 3",
+        "price": "9.99"
+    },
+    {
+        "title": "T-shirt 4",
+        "image": "/images/tshit4.jpg",
+        "description": "About T-shirt 4",
+        "price": "19.99"
+    },
+    {       
+        "title": "T-shirt 5",
+        "image": "/images/tshit5.jpg",
+        "description": "About T-shirt 5",
+        "price": "17.99"
+
+    },
+    {
+        "title": "T-shirt 6",
+        "image": "/images/tshit6.jpg",
+        "description": "About T-shirt 6",
+        "price": "12.99"
+    }
+]
